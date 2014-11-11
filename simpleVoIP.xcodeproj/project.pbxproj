@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA442209196E44E2007A2AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442208196E44E2007A2AFA /* Foundation.framework */; };
+		BA44220B196E44E2007A2AFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220A196E44E2007A2AFA /* CoreGraphics.framework */; };
+		BA44220D196E44E2007A2AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220C196E44E2007A2AFA /* UIKit.framework */; };
+		BA442213196E44E2007A2AFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA442211196E44E2007A2AFA /* InfoPlist.strings */; };
+		BA442215196E44E2007A2AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA442214196E44E2007A2AFA /* main.m */; };
+		BA442219196E44E2007A2AFA /* XCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA442218196E44E2007A2AFA /* XCAppDelegate.m */; };
+		BA44221C196E44E2007A2AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA44221A196E44E2007A2AFA /* Main.storyboard */; };
+		BA44221F196E44E2007A2AFA /* XCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44221E196E44E2007A2AFA /* XCLoginViewController.m */; };
+		BA442221196E44E2007A2AFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA442220196E44E2007A2AFA /* Images.xcassets */; };
+		BA442228196E44E2007A2AFA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442227196E44E2007A2AFA /* XCTest.framework */; };
+		BA442229196E44E2007A2AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442208196E44E2007A2AFA /* Foundation.framework */; };
+		BA44222A196E44E2007A2AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220C196E44E2007A2AFA /* UIKit.framework */; };
+		BA442232196E44E2007A2AFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA442230196E44E2007A2AFA /* InfoPlist.strings */; };
+		BA442234196E44E2007A2AFA /* simpleVoIPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA442233196E44E2007A2AFA /* simpleVoIPTests.m */; };
+		BA4A6048196E528F00C23EE7 /* libg7221codec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6036196E528F00C23EE7 /* libg7221codec-arm-apple-darwin9.a */; };
+		BA4A6049196E528F00C23EE7 /* libgsmcodec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6037196E528F00C23EE7 /* libgsmcodec-arm-apple-darwin9.a */; };
+		BA4A604A196E528F00C23EE7 /* libilbccodec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6038196E528F00C23EE7 /* libilbccodec-arm-apple-darwin9.a */; };
+		BA4A604B196E528F00C23EE7 /* libpj-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6039196E528F00C23EE7 /* libpj-arm-apple-darwin9.a */; };
+		BA4A604C196E528F00C23EE7 /* libpjlib-util-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A603A196E528F00C23EE7 /* libpjlib-util-arm-apple-darwin9.a */; };
+		BA4A604D196E528F00C23EE7 /* libpjmedia-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A603B196E528F00C23EE7 /* libpjmedia-arm-apple-darwin9.a */; };
+		BA4A604E196E528F00C23EE7 /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A603C196E528F00C23EE7 /* libpjmedia-audiodev-arm-apple-darwin9.a */; };
+		BA4A604F196E528F00C23EE7 /* libpjmedia-codec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A603D196E528F00C23EE7 /* libpjmedia-codec-arm-apple-darwin9.a */; };
+		BA4A6050196E528F00C23EE7 /* libpjmedia-videodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A603E196E528F00C23EE7 /* libpjmedia-videodev-arm-apple-darwin9.a */; };
+		BA4A6051196E528F00C23EE7 /* libpjnath-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A603F196E528F00C23EE7 /* libpjnath-arm-apple-darwin9.a */; };
+		BA4A6052196E528F00C23EE7 /* libpjsip-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6040196E528F00C23EE7 /* libpjsip-arm-apple-darwin9.a */; };
+		BA4A6053196E528F00C23EE7 /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6041196E528F00C23EE7 /* libpjsip-simple-arm-apple-darwin9.a */; };
+		BA4A6054196E528F00C23EE7 /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6042196E528F00C23EE7 /* libpjsip-ua-arm-apple-darwin9.a */; };
+		BA4A6055196E528F00C23EE7 /* libpjsua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6043196E528F00C23EE7 /* libpjsua-arm-apple-darwin9.a */; };
+		BA4A6056196E528F00C23EE7 /* libpjsua2-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6044196E528F00C23EE7 /* libpjsua2-arm-apple-darwin9.a */; };
+		BA4A6057196E528F00C23EE7 /* libresample-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6045196E528F00C23EE7 /* libresample-arm-apple-darwin9.a */; };
+		BA4A6058196E528F00C23EE7 /* libspeex-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6046196E528F00C23EE7 /* libspeex-arm-apple-darwin9.a */; };
+		BA4A6059196E528F00C23EE7 /* libsrtp-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6047196E528F00C23EE7 /* libsrtp-arm-apple-darwin9.a */; };
+		BA4A605D196E545200C23EE7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A605C196E545200C23EE7 /* AudioToolbox.framework */; };
+		BA4A605F196E545900C23EE7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A605E196E545900C23EE7 /* CFNetwork.framework */; };
+		BA4A6061196E546000C23EE7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6060196E546000C23EE7 /* AVFoundation.framework */; };
+		BACD0DEE19726B4A005A6607 /* XCPjsua.m in Sources */ = {isa = PBXBuildFile; fileRef = BACD0DED19726B4A005A6607 /* XCPjsua.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA44222B196E44E2007A2AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA4421FD196E44E2007A2AFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA442204196E44E2007A2AFA;
+			remoteInfo = simpleVoIP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA442205196E44E2007A2AFA /* simpleVoIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleVoIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA442208196E44E2007A2AFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA44220A196E44E2007A2AFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA44220C196E44E2007A2AFA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA442210196E44E2007A2AFA /* simpleVoIP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "simpleVoIP-Info.plist"; sourceTree = "<group>"; };
+		BA442212196E44E2007A2AFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA442214196E44E2007A2AFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA442216196E44E2007A2AFA /* simpleVoIP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "simpleVoIP-Prefix.pch"; sourceTree = "<group>"; };
+		BA442217196E44E2007A2AFA /* XCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCAppDelegate.h; sourceTree = "<group>"; };
+		BA442218196E44E2007A2AFA /* XCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCAppDelegate.m; sourceTree = "<group>"; };
+		BA44221B196E44E2007A2AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA44221D196E44E2007A2AFA /* XCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCLoginViewController.h; sourceTree = "<group>"; };
+		BA44221E196E44E2007A2AFA /* XCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCLoginViewController.m; sourceTree = "<group>"; };
+		BA442220196E44E2007A2AFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BA442226196E44E2007A2AFA /* simpleVoIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleVoIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA442227196E44E2007A2AFA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BA44222F196E44E2007A2AFA /* simpleVoIPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "simpleVoIPTests-Info.plist"; sourceTree = "<group>"; };
+		BA442231196E44E2007A2AFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA442233196E44E2007A2AFA /* simpleVoIPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simpleVoIPTests.m; sourceTree = "<group>"; };
+		BA4A6036196E528F00C23EE7 /* libg7221codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libg7221codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6037196E528F00C23EE7 /* libgsmcodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgsmcodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6038196E528F00C23EE7 /* libilbccodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libilbccodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6039196E528F00C23EE7 /* libpj-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpj-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A603A196E528F00C23EE7 /* libpjlib-util-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjlib-util-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A603B196E528F00C23EE7 /* libpjmedia-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A603C196E528F00C23EE7 /* libpjmedia-audiodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-audiodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A603D196E528F00C23EE7 /* libpjmedia-codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A603E196E528F00C23EE7 /* libpjmedia-videodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-videodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A603F196E528F00C23EE7 /* libpjnath-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjnath-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6040196E528F00C23EE7 /* libpjsip-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6041196E528F00C23EE7 /* libpjsip-simple-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6042196E528F00C23EE7 /* libpjsip-ua-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-ua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6043196E528F00C23EE7 /* libpjsua-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6044196E528F00C23EE7 /* libpjsua2-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua2-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6045196E528F00C23EE7 /* libresample-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libresample-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6046196E528F00C23EE7 /* libspeex-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libspeex-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A6047196E528F00C23EE7 /* libsrtp-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsrtp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A605C196E545200C23EE7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BA4A605E196E545900C23EE7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BA4A6060196E546000C23EE7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BACD0DED19726B4A005A6607 /* XCPjsua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPjsua.m; sourceTree = "<group>"; };
+		BACD0DEF19726B59005A6607 /* XCPjsua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPjsua.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA442202196E44E2007A2AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4A6061196E546000C23EE7 /* AVFoundation.framework in Frameworks */,
+				BA4A605F196E545900C23EE7 /* CFNetwork.framework in Frameworks */,
+				BA4A605D196E545200C23EE7 /* AudioToolbox.framework in Frameworks */,
+				BA4A6049196E528F00C23EE7 /* libgsmcodec-arm-apple-darwin9.a in Frameworks */,
+				BA44220B196E44E2007A2AFA /* CoreGraphics.framework in Frameworks */,
+				BA4A604D196E528F00C23EE7 /* libpjmedia-arm-apple-darwin9.a in Frameworks */,
+				BA4A6048196E528F00C23EE7 /* libg7221codec-arm-apple-darwin9.a in Frameworks */,
+				BA4A6051196E528F00C23EE7 /* libpjnath-arm-apple-darwin9.a in Frameworks */,
+				BA4A6054196E528F00C23EE7 /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */,
+				BA4A6059196E528F00C23EE7 /* libsrtp-arm-apple-darwin9.a in Frameworks */,
+				BA4A6055196E528F00C23EE7 /* libpjsua-arm-apple-darwin9.a in Frameworks */,
+				BA4A604F196E528F00C23EE7 /* libpjmedia-codec-arm-apple-darwin9.a in Frameworks */,
+				BA44220D196E44E2007A2AFA /* UIKit.framework in Frameworks */,
+				BA4A6052196E528F00C23EE7 /* libpjsip-arm-apple-darwin9.a in Frameworks */,
+				BA4A604A196E528F00C23EE7 /* libilbccodec-arm-apple-darwin9.a in Frameworks */,
+				BA4A6053196E528F00C23EE7 /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */,
+				BA4A604B196E528F00C23EE7 /* libpj-arm-apple-darwin9.a in Frameworks */,
+				BA4A604C196E528F00C23EE7 /* libpjlib-util-arm-apple-darwin9.a in Frameworks */,
+				BA4A6050196E528F00C23EE7 /* libpjmedia-videodev-arm-apple-darwin9.a in Frameworks */,
+				BA4A604E196E528F00C23EE7 /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */,
+				BA442209196E44E2007A2AFA /* Foundation.framework in Frameworks */,
+				BA4A6057196E528F00C23EE7 /* libresample-arm-apple-darwin9.a in Frameworks */,
+				BA4A6058196E528F00C23EE7 /* libspeex-arm-apple-darwin9.a in Frameworks */,
+				BA4A6056196E528F00C23EE7 /* libpjsua2-arm-apple-darwin9.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA442223196E44E2007A2AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA442228196E44E2007A2AFA /* XCTest.framework in Frameworks */,
+				BA44222A196E44E2007A2AFA /* UIKit.framework in Frameworks */,
+				BA442229196E44E2007A2AFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA4421FC196E44E2007A2AFA = {
+			isa = PBXGroup;
+			children = (
+				BA44220E196E44E2007A2AFA /* simpleVoIP */,
+				BA44222D196E44E2007A2AFA /* simpleVoIPTests */,
+				BA442207196E44E2007A2AFA /* Frameworks */,
+				BA442206196E44E2007A2AFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA442206196E44E2007A2AFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA442205196E44E2007A2AFA /* simpleVoIP.app */,
+				BA442226196E44E2007A2AFA /* simpleVoIPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA442207196E44E2007A2AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA4A6060196E546000C23EE7 /* AVFoundation.framework */,
+				BA4A605E196E545900C23EE7 /* CFNetwork.framework */,
+				BA4A605C196E545200C23EE7 /* AudioToolbox.framework */,
+				BA4A6036196E528F00C23EE7 /* libg7221codec-arm-apple-darwin9.a */,
+				BA4A6037196E528F00C23EE7 /* libgsmcodec-arm-apple-darwin9.a */,
+				BA4A6038196E528F00C23EE7 /* libilbccodec-arm-apple-darwin9.a */,
+				BA4A6039196E528F00C23EE7 /* libpj-arm-apple-darwin9.a */,
+				BA4A603A196E528F00C23EE7 /* libpjlib-util-arm-apple-darwin9.a */,
+				BA4A603B196E528F00C23EE7 /* libpjmedia-arm-apple-darwin9.a */,
+				BA4A603C196E528F00C23EE7 /* libpjmedia-audiodev-arm-apple-darwin9.a */,
+				BA4A603D196E528F00C23EE7 /* libpjmedia-codec-arm-apple-darwin9.a */,
+				BA4A603E196E528F00C23EE7 /* libpjmedia-videodev-arm-apple-darwin9.a */,
+				BA4A603F196E528F00C23EE7 /* libpjnath-arm-apple-darwin9.a */,
+				BA4A6040196E528F00C23EE7 /* libpjsip-arm-apple-darwin9.a */,
+				BA4A6041196E528F00C23EE7 /* libpjsip-simple-arm-apple-darwin9.a */,
+				BA4A6042196E528F00C23EE7 /* libpjsip-ua-arm-apple-darwin9.a */,
+				BA4A6043196E528F00C23EE7 /* libpjsua-arm-apple-darwin9.a */,
+				BA4A6044196E528F00C23EE7 /* libpjsua2-arm-apple-darwin9.a */,
+				BA4A6045196E528F00C23EE7 /* libresample-arm-apple-darwin9.a */,
+				BA4A6046196E528F00C23EE7 /* libspeex-arm-apple-darwin9.a */,
+				BA4A6047196E528F00C23EE7 /* libsrtp-arm-apple-darwin9.a */,
+				BA442208196E44E2007A2AFA /* Foundation.framework */,
+				BA44220A196E44E2007A2AFA /* CoreGraphics.framework */,
+				BA44220C196E44E2007A2AFA /* UIKit.framework */,
+				BA442227196E44E2007A2AFA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA44220E196E44E2007A2AFA /* simpleVoIP */ = {
+			isa = PBXGroup;
+			children = (
+				BACD0DEF19726B59005A6607 /* XCPjsua.h */,
+				BACD0DED19726B4A005A6607 /* XCPjsua.m */,
+				BA442217196E44E2007A2AFA /* XCAppDelegate.h */,
+				BA442218196E44E2007A2AFA /* XCAppDelegate.m */,
+				BA44221D196E44E2007A2AFA /* XCLoginViewController.h */,
+				BA44221E196E44E2007A2AFA /* XCLoginViewController.m */,
+				BA44221A196E44E2007A2AFA /* Main.storyboard */,
+				BA442220196E44E2007A2AFA /* Images.xcassets */,
+				BA44220F196E44E2007A2AFA /* Supporting Files */,
+			);
+			path = simpleVoIP;
+			sourceTree = "<group>";
+		};
+		BA44220F196E44E2007A2AFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA442210196E44E2007A2AFA /* simpleVoIP-Info.plist */,
+				BA442211196E44E2007A2AFA /* InfoPlist.strings */,
+				BA442214196E44E2007A2AFA /* main.m */,
+				BA442216196E44E2007A2AFA /* simpleVoIP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA44222D196E44E2007A2AFA /* simpleVoIPTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA442233196E44E2007A2AFA /* simpleVoIPTests.m */,
+				BA44222E196E44E2007A2AFA /* Supporting Files */,
+			);
+			path = simpleVoIPTests;
+			sourceTree = "<group>";
+		};
+		BA44222E196E44E2007A2AFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA44222F196E44E2007A2AFA /* simpleVoIPTests-Info.plist */,
+				BA442230196E44E2007A2AFA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA442204196E44E2007A2AFA /* simpleVoIP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA442237196E44E3007A2AFA /* Build configuration list for PBXNativeTarget "simpleVoIP" */;
+			buildPhases = (
+				BA442201196E44E2007A2AFA /* Sources */,
+				BA442202196E44E2007A2AFA /* Frameworks */,
+				BA442203196E44E2007A2AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = simpleVoIP;
+			productName = simpleVoIP;
+			productReference = BA442205196E44E2007A2AFA /* simpleVoIP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA442225196E44E2007A2AFA /* simpleVoIPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA44223A196E44E3007A2AFA /* Build configuration list for PBXNativeTarget "simpleVoIPTests" */;
+			buildPhases = (
+				BA442222196E44E2007A2AFA /* Sources */,
+				BA442223196E44E2007A2AFA /* Frameworks */,
+				BA442224196E44E2007A2AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA44222C196E44E2007A2AFA /* PBXTargetDependency */,
+			);
+			name = simpleVoIPTests;
+			productName = simpleVoIPTests;
+			productReference = BA442226196E44E2007A2AFA /* simpleVoIPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA4421FD196E44E2007A2AFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Xianwen Chen";
+				TargetAttributes = {
+					BA442225196E44E2007A2AFA = {
+						TestTargetID = BA442204196E44E2007A2AFA;
+					};
+				};
+			};
+			buildConfigurationList = BA442200196E44E2007A2AFA /* Build configuration list for PBXProject "simpleVoIP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA4421FC196E44E2007A2AFA;
+			productRefGroup = BA442206196E44E2007A2AFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA442204196E44E2007A2AFA /* simpleVoIP */,
+				BA442225196E44E2007A2AFA /* simpleVoIPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA442203196E44E2007A2AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA442221196E44E2007A2AFA /* Images.xcassets in Resources */,
+				BA442213196E44E2007A2AFA /* InfoPlist.strings in Resources */,
+				BA44221C196E44E2007A2AFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA442224196E44E2007A2AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA442232196E44E2007A2AFA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA442201196E44E2007A2AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACD0DEE19726B4A005A6607 /* XCPjsua.m in Sources */,
+				BA442215196E44E2007A2AFA /* main.m in Sources */,
+				BA442219196E44E2007A2AFA /* XCAppDelegate.m in Sources */,
+				BA44221F196E44E2007A2AFA /* XCLoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA442222196E44E2007A2AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA442234196E44E2007A2AFA /* simpleVoIPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA44222C196E44E2007A2AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA442204196E44E2007A2AFA /* simpleVoIP */;
+			targetProxy = BA44222B196E44E2007A2AFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA442211196E44E2007A2AFA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA442212196E44E2007A2AFA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BA44221A196E44E2007A2AFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA44221B196E44E2007A2AFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA442230196E44E2007A2AFA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA442231196E44E2007A2AFA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA442235196E44E3007A2AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA442236196E44E3007A2AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA442238196E44E3007A2AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simpleVoIP/simpleVoIP-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PJ_AUTOCONF,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/pjsip-include\"",
+				);
+				INFOPLIST_FILE = "simpleVoIP/simpleVoIP-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BA442239196E44E3007A2AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simpleVoIP/simpleVoIP-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = PJ_AUTOCONF;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/pjsip-include\"",
+				);
+				INFOPLIST_FILE = "simpleVoIP/simpleVoIP-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BA44223B196E44E3007A2AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/simpleVoIP.app/simpleVoIP";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simpleVoIP/simpleVoIP-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "simpleVoIPTests/simpleVoIPTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BA44223C196E44E3007A2AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/simpleVoIP.app/simpleVoIP";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simpleVoIP/simpleVoIP-Prefix.pch";
+				INFOPLIST_FILE = "simpleVoIPTests/simpleVoIPTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA442200196E44E2007A2AFA /* Build configuration list for PBXProject "simpleVoIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA442235196E44E3007A2AFA /* Debug */,
+				BA442236196E44E3007A2AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA442237196E44E3007A2AFA /* Build configuration list for PBXNativeTarget "simpleVoIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA442238196E44E3007A2AFA /* Debug */,
+				BA442239196E44E3007A2AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA44223A196E44E3007A2AFA /* Build configuration list for PBXNativeTarget "simpleVoIPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA44223B196E44E3007A2AFA /* Debug */,
+				BA44223C196E44E3007A2AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA4421FD196E44E2007A2AFA /* Project object */;
+}
