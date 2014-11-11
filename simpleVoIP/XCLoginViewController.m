@@ -17,11 +17,16 @@
  */
 
 #import "XCLoginViewController.h"
+#import "XCCallViewController.h"
 #import "XCPjsua.h"
 
 @interface XCLoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *callButton;
+
+@property (weak, nonatomic) IBOutlet UITextField *loginTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) UIActivityIndicatorView *activityIndicator;
 
 @end
 
@@ -29,55 +34,62 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+  
+  self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+  self.activityIndicator.hidden = YES;
+#warning hardcode center
+  [self.activityIndicator setCenter: CGPointMake(160.f, 265.f)];
+  [self.view addSubview: self.activityIndicator];
 }
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)login:(id)sender
 {
-    // You should change the 1st and the 2nd parameter to your own user name and password
-    [[XCPjsua sharedXCPjsua] startPjsipAndRegisterOnServer:"ekiga.net"
-                                              withUserName:"gerasimov.test2"
-                                               andPassword:"123!@#qaz"
-                                                  callback:^(BOOL success){
-                                                      [self loginCompleted:success];
-                                                  }];
+  // You should change the 1st and the 2nd parameter to your own user name and password
+  [[XCPjsua sharedXCPjsua] startPjsipAndRegisterOnServer:"ekiga.net" withUserName: (char*)[self.loginTextField.text UTF8String] andPassword: (char*)[self.passwordTextField.text UTF8String] callback:^(BOOL success){
+    [self loginCompleted:success];
+  }];
+  [self.activityIndicator startAnimating];
 }
 
 - (IBAction)makeCall:(id)sender
 {
-    [[XCPjsua sharedXCPjsua] makeCallTo:"sip:ysirko@ekiga.net"];
+    //[[XCPjsua sharedXCPjsua] makeCallTo:"sip:gerasimov.test2@ekiga.net"];
 }
 
 - (void)loginCompleted:(BOOL)success
 {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if (success) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Succeeded"
-                                                            message:nil
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
-
-            self.callButton.hidden = NO;
-        } else {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed"
-                                                            message:nil
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
-
-            self.callButton.hidden = YES;
-        }
-    });
+  XCCallViewController* callViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"callViewController"];
+  
+  dispatch_async(dispatch_get_main_queue(), ^{
+    if (success) {
+      UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Succeeded"
+                                                      message:nil
+                                                     delegate:nil
+                                            cancelButtonTitle:@"OK"
+                                            otherButtonTitles:nil];
+      [alert show];
+      [self.navigationController pushViewController:callViewController animated:YES];
+      [self.activityIndicator stopAnimating];
+      self.callButton.hidden = NO;
+    } else {
+      UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed"
+                                                      message:nil
+                                                     delegate:nil
+                                            cancelButtonTitle:@"OK"
+                                            otherButtonTitles:nil];
+      [alert show];
+      [self.activityIndicator stopAnimating];
+      self.callButton.hidden = YES;
+    }
+  });
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849EAA1E1A126059000BFD41 /* XCCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849EAA1D1A126059000BFD41 /* XCCallViewController.m */; };
 		BA442209196E44E2007A2AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442208196E44E2007A2AFA /* Foundation.framework */; };
 		BA44220B196E44E2007A2AFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220A196E44E2007A2AFA /* CoreGraphics.framework */; };
 		BA44220D196E44E2007A2AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220C196E44E2007A2AFA /* UIKit.framework */; };
@@ -56,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		849EAA1C1A126059000BFD41 /* XCCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCCallViewController.h; sourceTree = "<group>"; };
+		849EAA1D1A126059000BFD41 /* XCCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCCallViewController.m; sourceTree = "<group>"; };
 		BA442205196E44E2007A2AFA /* simpleVoIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleVoIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA442208196E44E2007A2AFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA44220A196E44E2007A2AFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -208,6 +211,8 @@
 				BA44221A196E44E2007A2AFA /* Main.storyboard */,
 				BA442220196E44E2007A2AFA /* Images.xcassets */,
 				BA44220F196E44E2007A2AFA /* Supporting Files */,
+				849EAA1C1A126059000BFD41 /* XCCallViewController.h */,
+				849EAA1D1A126059000BFD41 /* XCCallViewController.m */,
 			);
 			path = simpleVoIP;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 			files = (
 				BACD0DEE19726B4A005A6607 /* XCPjsua.m in Sources */,
 				BA442215196E44E2007A2AFA /* main.m in Sources */,
+				849EAA1E1A126059000BFD41 /* XCCallViewController.m in Sources */,
 				BA442219196E44E2007A2AFA /* XCAppDelegate.m in Sources */,
 				BA44221F196E44E2007A2AFA /* XCLoginViewController.m in Sources */,
 			);
