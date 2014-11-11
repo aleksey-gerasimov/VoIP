@@ -49,12 +49,24 @@
                                     <action selector="login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2xj-Mf-R6G"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with you Ekiga.com account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uQ-eZ-M9c">
+                                <rect key="frame" x="0.0" y="90" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HRT-Fw-97P"/>
+                                    <constraint firstAttribute="width" constant="320" id="toM-f2-vP4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.37419693850000002" green="0.66748461739999998" blue="0.77734375" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="6VI-tP-LLa" secondAttribute="centerX" id="BZV-Mt-dKg"/>
                             <constraint firstAttribute="centerX" secondItem="42G-59-jvP" secondAttribute="centerX" id="G71-hV-i7r"/>
+                            <constraint firstAttribute="centerX" secondItem="1uQ-eZ-M9c" secondAttribute="centerX" id="VG7-BD-b1C"/>
                             <constraint firstItem="k7V-4s-zp8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="149" id="a69-54-bRC"/>
+                            <constraint firstItem="1uQ-eZ-M9c" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="70" id="dWG-Ge-v2A"/>
                             <constraint firstAttribute="centerX" secondItem="k7V-4s-zp8" secondAttribute="centerX" id="ikV-j7-4nb"/>
                             <constraint firstItem="42G-59-jvP" firstAttribute="top" secondItem="k7V-4s-zp8" secondAttribute="bottom" constant="21" id="p0A-29-YyQ"/>
                             <constraint firstItem="6VI-tP-LLa" firstAttribute="top" secondItem="42G-59-jvP" secondAttribute="bottom" constant="15" id="s2A-6w-m01"/>
